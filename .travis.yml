@@ -1,7 +1,6 @@
-if: 'branch =~ ^master$|^development$'
 jobs:
   include:
-    - stage: changelog
+    - stage: deploy
       script:
         - ./changelog.sh
       if: 'branch = master AND type != pull_request AND !(commit_message =~ /(\[skip changelog\])/)'
