@@ -5,6 +5,3 @@ jobs:
     script: "./changelog.sh"
     if: branch = master AND type != pull_request AND !(commit_message =~ /(\[skip
       changelog\])/)
-env:
-  global:
-    secure: fVqPKLeq4F0Rxgyjf2Dg1VCQr50o9NfuVI7HV94dsn1PJJ/Dtl84wY/x57gaCnhoTxFOp0LlzKTpA3m79oJPARlNEpKinqZ6/xdwbibIbtbd9ybMQJBElULJBNoqed/992ioFtc3CcjPw/BO8Am326NZrSLX8PGSq5UV4d9xnSgFSW2kK+/jaIU66ENmL7BurA32YbO88Zr7OgrP58Zo7GgcpgGrUR4h+m2LPnqM0R3GWaVN9yO32UkG6np6FWRoSJ9auL4YResG7SFabbk4RT5A/+cAq5y5HW9avO0Iw57lRYRKnEadvylQBUa4Wg3BkTfiovOU47M0OocPzEw9zErYTO2fvNC6n7peOYMSSgF1vNzLgchhcpfxuAV0TLCr2Ob8DW6xuWe5A+jU0pz0D46kYXj+4XPjcUsHAhjlydGZr8kGsvGahUFT8ZL1NGoci7J4ar9/7gCRPbB4GdF8TTW+VgMGTiHf9gZeKVCbp87mbDz0ifFOIMdHxyd1Rvf6zUmMbFDyfbo/3z4ue9EJH/4x2QiYEU0edghBcSSVrU9/4OU6DZyLz4RU8eXtRTS8IIF9BB0M3ng3sfWjEy1/ObB9wT1OIwUTsUTwUrA1bG7HtGIhBnPG6UGCxEuhbmJfyShJkDpxpnwDTAZp0cUtZrjLgfNlErdbNyaKhNQ40LQ=
