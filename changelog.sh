@@ -3,6 +3,8 @@
 nvm install 10
 nvm use 10
 
+travis encrypt --add --interactive
+
 git reset --hard # remove the credential
 git config user.email 'builds@travis-ci.com' && \
 git config user.name 'Travis CI' && \
