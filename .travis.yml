@@ -1,6 +1,10 @@
 language: ruby
 jobs:
   include:
-    - stage: deploy
-      script: ./changelog.sh
-      if: 'branch = master AND type != pull_request AND !(commit_message =~ /(\[skip changelog\])/)'
+  - stage: deploy
+    script: "./changelog.sh"
+    if: branch = master AND type != pull_request AND !(commit_message =~ /(\[skip
+      changelog\])/)
+env:
+  global:
+    secure: S2VeZ9EwnCJWSRfhOGO4cKO8wqjyjOYYauGu9BLQDQTXYG6F0nU6eaiarCNGzMeQBnegztKc1JfXDFRbPWDQfgtxYbwVtEpjwA38wCnvC7vEslOUThR+P46gJx9om/fBRpaYHdB7K66au7YZDQAZUd9YtwCLqDFTe/ryoiBJdmpGEigfZONylQMBOL/eQsz28Jn9+7cIcw8CtUkGDJZ4VuGTtlgxWWGEQgl1Kf/qHXQDfvseHdkLDqxKJRYTmeUTDnfboUgfoZ0ChMbrdJjms7BBiJmb9iNwmlpzHmFOyVpaJP5paaoyblCeC3RdsDudWALEdEcs3aVEA11mpInOjdxL3iO4sIjXTHYCm5PcPX+1ATFv232q2I0rfjVDN3MjGTmjcKxrk7HIC3RozTglrrqNevTecZl8RcfaXbQrw0EkHPoT9AM3k0qLwe/W8b/mYTCfjs6H2EkT0xLTPq9kY3RwpNuBTsRl6cgKs0xNzORuZ8N4iz5Gpu4L4IRKNvzkFWtUyHE5OakpGi56Dd9xwv6mw6KIJCmfBSLd0YVPl/2Yvl125qjO2vPgsrFMF1FsdQKDF1x+zW8ukoP9KLVOP/AG2QNerVaTMk8dl4/o/OEAvx7arGdl1XGdEni9FkxMKyN1RyAIa+jqcXZcPwKJfOVsBowoXOILCVgyo91fGCM=
